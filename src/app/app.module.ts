@@ -1,3 +1,4 @@
+import { UserService } from './user.service';
 import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { environment } from 'src/environments/environment';
@@ -75,7 +76,7 @@ import { LoginComponent } from './login/login.component';
       }
     ])
   ],
-  providers: [AuthService, AuthGuardService],
+  providers: [AuthService, AuthGuardService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
