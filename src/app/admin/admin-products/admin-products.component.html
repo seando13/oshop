@@ -29,8 +29,8 @@
     [resizable]="true"
   >
     <ng-template #dataTableCell let-item="item">
-      {{ item.price | currency: 'USD':true }}
-      <!-- changed to sting instead of true -->
+      {{ item.price | currency: 'USD':'code' }}
+      <!-- changed to string instead of true -->
     </ng-template>
   </data-table-column>
   <data-table-column [property]="'$key'">
